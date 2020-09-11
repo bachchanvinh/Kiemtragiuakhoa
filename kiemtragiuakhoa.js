@@ -1,4 +1,4 @@
-//Bai 1:Dao nguoc chuoi                 ok
+//Bai 1:Dao nguoc chuoi                 
 // let str_input=prompt("str_input")
 // let array=str_input.split("")
 // console.log(array)
@@ -9,12 +9,24 @@
 // console.log(array2.join(""))
 
 
-//Bai 2:Viet hoa chu dau                    chua ok
+//Bai 2:Viet hoa chu dau                    
 // let str = prompt("Nhap cau")
-// let fst=str.substr(1,str.length)
-// alert()
+// let chu = str.split(" ")
+// let arr=[]
+// for(let i =0;i<chu.length;i++){
+// let a = chu[i].split("")
+// console.log(a)
+// let b = a[0]
+// b =b.toUpperCase()
+// console.log(b)
+// a[0]=b
+// for(ii=0;ii<a.length;ii++){
+// arr.push=a[ii]
+// }
+// }
+// console.log(arr)
 
-//Bai 3:Xoa cac phan tu trung               ok
+//Bai 3:Xoa cac phan tu trung             
 // let Arr=[3,3,4,1,2,5,6,3,1,5,6]
 // for(let i =0;i<Arr.length;i++){
 //    for(let ii =Arr.length-1;ii>i;ii--){
@@ -129,110 +141,57 @@
 
 //Bai 5:
 //5A....................................
-let date =["29","02","2004"]
-for(let i =0; i< date.length;i++){
-    date[i]=Number(date[i])
-}
-console.log(date)
-if(date[2]%400==0){
-    if(date[1]==1||date[1]==3||date[1]==5||date[1]==7||date[1]==8||date[1]==10||date[1]==12){
-        console.log(date.join("/"))
-    }
-    else if(date[1]==4||date[1]==6||date[1]==9||date[1]==11)
-        if(date[0]>30){
-            console.log("Khong hop le")
-        }
-        else console.log(date.join("/"))
-    else{if(date[0]>29){
-        console.log("Khong hop le")
-    }
-    else console.log(date.join("/"))
-    }
+// let date =["29","02","2004"]
+// for(let i =0; i< date.length;i++){
+//     date[i]=Number(date[i])
+// }
+// console.log(date)
+// if(date[2]%400==0){
+//     if(date[1]==1||date[1]==3||date[1]==5||date[1]==7||date[1]==8||date[1]==10||date[1]==12){
+//         console.log(date.join("/"))
+//     }
+//     else if(date[1]==4||date[1]==6||date[1]==9||date[1]==11)
+//         if(date[0]>30){
+//             console.log("Khong hop le")
+//         }
+//         else console.log(date.join("/"))
+//     else{if(date[0]>29){
+//         console.log("Khong hop le")
+//     }
+//     else console.log(date.join("/"))
+//     }
     
-}
-else if(date[2]%4==0){
-    namnhuan=true
-    if(date[1]==1||date[1]==3||date[1]==5||date[1]==7||date[1]==8||date[1]==10||date[1]==12){
-        console.log(date.join("/"))
-    }
-    else if(date[1]==4||date[1]==6||date[1]==9||date[1]==11)
-        if(date[0]>30){
-            console.log("Khong hop le")
-        }
-        else console.log(date.join("/"))
-    else{if(date[0]>29){
-        console.log("Khong hop le")
-    }
-    else console.log(date.join("/"))
-    }
-}
-else if(date[2]%4!=0){
-    namnhuan=true
-    if(date[1]==1||date[1]==3||date[1]==5||date[1]==7||date[1]==8||date[1]==10||date[1]==12){
-        console.log(date.join("/"))
-    }
-    else if(date[1]==4||date[1]==6||date[1]==9||date[1]==11)
-        if(date[0]>30){
-            console.log("Khong hop le")
-        }
-        else console.log(date.join("/"))
-    else{if(date[0]>28){
-        console.log("Khong hop le")
-    }
-    else console.log(date.join("/"))
-    }    
-}
+// }
+// else if(date[2]%4==0){
+//     namnhuan=true
+//     if(date[1]==1||date[1]==3||date[1]==5||date[1]==7||date[1]==8||date[1]==10||date[1]==12){
+//         console.log(date.join("/"))
+//     }
+//     else if(date[1]==4||date[1]==6||date[1]==9||date[1]==11)
+//         if(date[0]>30){
+//             console.log("Khong hop le")
+//         }
+//         else console.log(date.join("/"))
+//     else{if(date[0]>29){
+//         console.log("Khong hop le")
+//     }
+//     else console.log(date.join("/"))
+//     }
+// }
+// else if(date[2]%4!=0){
+//     namnhuan=true
+//     if(date[1]==1||date[1]==3||date[1]==5||date[1]==7||date[1]==8||date[1]==10||date[1]==12){
+//         console.log(date.join("/"))
+//     }
+//     else if(date[1]==4||date[1]==6||date[1]==9||date[1]==11)
+//         if(date[0]>30){
+//             console.log("Khong hop le")
+//         }
+//         else console.log(date.join("/"))
+//     else{if(date[0]>28){
+//         console.log("Khong hop le")
+//     }
+//     else console.log(date.join("/"))
+//     }    
+//}
 //5B....................................
-let date =["29","02","2004"]
-for(let i =0; i< date.length;i++){
-    date[i]=Number(date[i])
-}
-console.log(date)
-if(date[2]%400==0){
-    if(date[1]==1||date[1]==3||date[1]==5||date[1]==7||date[1]==8||date[1]==10||date[1]==12){
-        console.log(date.join("/"))
-    }
-    else if(date[1]==4||date[1]==6||date[1]==9||date[1]==11)
-        if(date[0]>30){
-            console.log("Khong hop le")
-        }
-        else console.log(date.join("/"))
-    else{if(date[0]>29){
-        console.log("Khong hop le")
-    }
-    else console.log(date.join("/"))
-    }
-    
-}
-else if(date[2]%4==0){
-    namnhuan=true
-    if(date[1]==1||date[1]==3||date[1]==5||date[1]==7||date[1]==8||date[1]==10||date[1]==12){
-        console.log(date.join("/"))
-    }
-    else if(date[1]==4||date[1]==6||date[1]==9||date[1]==11)
-        if(date[0]>30){
-            console.log("Khong hop le")
-        }
-        else console.log(date.join("/"))
-    else{if(date[0]>29){
-        console.log("Khong hop le")
-    }
-    else console.log(date.join("/"))
-    }
-}
-else if(date[2]%4!=0){
-    namnhuan=true
-    if(date[1]==1||date[1]==3||date[1]==5||date[1]==7||date[1]==8||date[1]==10||date[1]==12){
-        console.log(date.join("/"))
-    }
-    else if(date[1]==4||date[1]==6||date[1]==9||date[1]==11)
-        if(date[0]>30){
-            console.log("Khong hop le")
-        }
-        else console.log(date.join("/"))
-    else{if(date[0]>28){
-        console.log("Khong hop le")
-    }
-    else console.log(date.join("/"))
-    }    
-}
